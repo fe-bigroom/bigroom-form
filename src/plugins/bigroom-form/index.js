@@ -25,8 +25,9 @@ export default {
 }
 
 function useVeeValidate (Vue, validation) {
-  const { locale, dictionary, i18n, rules } = validation
-  const VeeValidate = require('vee-validate').default
+  const { validate, configs } = validation
+  const { locale, dictionary, i18n, rules } = configs
+  const VeeValidate = validate
   const VeeValidator = VeeValidate.Validator
   const localeFile = require(`vee-validate/dist/locale/${locale}`)
 

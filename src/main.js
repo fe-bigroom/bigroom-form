@@ -2,7 +2,8 @@ import Vue from 'vue'
 import ElementUI from 'element-ui'
 import VeeValidate from 'vee-validate'
 
-import App from './App.vue'
+import App from './App'
+// import Demo from './demo'
 import BigroomForm from './plugins/bigroom-form'
 import elementCmpts from './forms/element'
 import formValidteConfigs from './forms/configs/validate-configs'
@@ -20,5 +21,5 @@ Vue.use(BigroomForm, {
 })
 
 new Vue({
-  render: h => h(App)
+  render: h => h(App) // App
 }).$mount('#app')
