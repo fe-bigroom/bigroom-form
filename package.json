@@ -1,7 +1,6 @@
 {
   "name": "vue-bigroom-form",
   "version": "0.1.0",
-  "private": true,
   "main": "src/plugins/bigroom-form/index.js",
   "scripts": {
     "start": "vue-cli-service serve",
